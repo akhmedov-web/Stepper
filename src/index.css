@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  background:url("./images/image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.btn{
+  @apply bg-green-600 w-full text-white rounded-3xl h-11 my-2 opacity-70 hover:shadow-xl;
+}
