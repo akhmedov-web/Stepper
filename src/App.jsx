@@ -15,7 +15,7 @@ export default function App() {
     <div className='container w-screen h-screen flex justify-center items-center px-2 py-4'>
       <div className='form-outer w-full lg:w-2/4 h-full lg:h-3/4 rounded-lg shadow-lg bg-white p-3 lg:p-8'>
         <div className='flex items-center'>
-          <img onClick={() => setSteps(steps - 1)} className='w-6 h-5 mx-5' src="https://img.icons8.com/ios-glyphs/90/null/chevron-left.png" alt="chevron" />
+          <img onClick={() => setSteps(steps - 1)} className={steps>0?'w-6 h-5 mx-5':'hidden'} src="https://img.icons8.com/ios-glyphs/90/null/chevron-left.png" alt="chevron" />
           <Steps
             size="small"
             current={steps}
